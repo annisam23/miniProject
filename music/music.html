@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="cover">
+            <img src="girl.jpg" alt="">
+        </div>
+        <div class="info">
+            <div class="title">Lantas</div>
+            <div class="singer">Juicy Luicy</div>
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" max="100" min="0" oninput="handleSeekBar()">
+    
+            <audio class="music-element">
+                <source src="juicyluicy-lantas.mp3" type="audio/mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
